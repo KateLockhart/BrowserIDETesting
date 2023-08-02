@@ -7,7 +7,7 @@ export default function Landing({IDES}) {
 
   return (
     <>
-      <Container className="bg-light border">
+      <Container className="bg-light border" fluid>
         <div id='linksDiv'>
           {IDES.map(IDE => {
             return(

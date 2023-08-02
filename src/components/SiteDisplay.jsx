@@ -4,7 +4,7 @@ import { Container, Col, Row } from 'reactstrap';
 export default function SiteDisplay({IDE}) {
   return (
     <>
-      <Container className="bg-light border">
+      <Container className="bg-light border" fluid>
         <h2><a href={IDE.siteURL}>{IDE.name}</a></h2>
         <Row>
           <Col xs="4" className="bg-light border">
