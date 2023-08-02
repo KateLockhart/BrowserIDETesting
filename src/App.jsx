@@ -8,6 +8,7 @@ import SiteDisplay from './components/SiteDisplay';
 
 function App() {
   // Create an array of objects per site to pass to siteDisplay component which becomes it's own page and link via a map to routes below landing
+  let slash = '/';
   return (
     <div className="App">
       <Navbar
@@ -27,7 +28,7 @@ function App() {
         {
           IDES.map(IDE => (
             <Route
-            path={'/BrowserIDETesting/'+IDE.name}
+            path={slash+IDE.name}
             element={<SiteDisplay IDE={IDE} />}
           />
           ))

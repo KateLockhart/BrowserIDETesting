@@ -10,14 +10,18 @@ export default function SiteDisplay({IDE}) {
           <Col xs="4" className="bg-light border">
             <br/>
             <h4>{IDE.name} Pros:</h4>
-            {IDE.pros.map(pro => {
-              return(<ul>{pro}</ul>)
-            })}
+            <ul>
+              {IDE.pros.map(pro => {
+                return(<li>{pro}</li>)
+              })}
+            </ul>
             <br/>
             <h4>{IDE.name} Cons:</h4>
-            {IDE.cons.map(con => {
-              return(<ul>{con}</ul>)
-            })}
+            <ul>
+              {IDE.cons.map(con => {
+                return(<li>{con}</li>)
+              })}
+            </ul>
           </Col>
 
           <Col xs="8" className="bg-light border">
