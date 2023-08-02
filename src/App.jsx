@@ -15,19 +15,19 @@ function App() {
     color="secondary"
     dark
   >
-    <NavbarBrand href="/">
+    <NavbarBrand href="/BrowserIDETesting/">
       Browser IDE Testing Grounds
     </NavbarBrand>
   </Navbar>
       <Routes>
         <Route
-          path='/'
+          path='/BrowserIDETesting/'
           element={<Landing IDES={IDES}/>}
           />
         {
           IDES.map(IDE => (
             <Route
-            path={IDE.name}
+            path={'/BrowserIDETesting/'+IDE.name}
             element={<SiteDisplay IDE={IDE} />}
           />
           ))
