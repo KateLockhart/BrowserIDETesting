@@ -40,7 +40,7 @@ let IDES = [
         title="happy-black-yvs7mn"
         allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
         sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-      ></iframe>)},
+        ></iframe>)},
         pros: [
             'Has file explorer, ability to connect to GH for version control, and CLI command supported.',
             'Can embed via url or iFrame, embed functionality in beta though which may mean embed may not support full IDE features.',
@@ -91,15 +91,14 @@ let IDES = [
         embed: () => {return(<iframe title="StackBlitz embed" src='https://stackblitz.com/edit/stackblitz-starters-hmps8n?embed=1&file=src%2FApp.js&hideNavigation=1' width="100%" height="500" />)
         },
         pros: [
-            '',
-            '',
-            '',
-            ''
+            'Has an editable embed(via iframe or sdk), though no saving code via embed functionality.',
+            'Can connect to GH, has file explorer, and is able to install dependencies though seemingly no CLI.',
+            'Can create a project and embed from GH repo.',
+            'Could be used to code along while watching the video above on the same screen frame? '
         ],
         cons: [
-            '',
-            '',
-            ''
+            'Does not seem to have a team or permission structure feature.',
+            `No ability to observe students' code/use.`
         ] 
     }
 ];
